@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* GRID DEL BODY Y CSS DEL BODY*/
+body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #333333;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 70% 30% ;
+    grid-template-rows: 900px 100px 1fr 200px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer"
+    ;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    border: 1px solid red;
+    grid-area: header;
+}
+.nav{
+    border: 1px solid red;
+    grid-area: nav;
+}
+.main{
+    border: 1px solid red;
+    grid-area: main;
+}
+.aside{
+    border: 1px solid red;
+    grid-area: aside;
+}
+.footer{
+    border: 1px solid red;
+    grid-area: footer;
+}
+
+
+.nav ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li{
+    width: 100%;
+    height: 100%;
+}
+
+.nav ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.nav ul li a:hover{
+    background-color: black;
+    transition: 0.4s all ease-in;
+}
+
+
+/*Estilos para el header y grid*/
+.header{
+    background-image: url("/src/img/650d715703204e7241295dea_html\ codes\ list.webp");
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen */
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "sec1-header sec2-header";
+    
+}
+
+.sec1-header{
+    grid-area:sec1-header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2-header{
+    grid-area:sec2-header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* estilos para el main y GRID*/
+
+.main{
+
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto auto auto;
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section3"
+    ;
+}
+
+.main .section1{
+    grid-area: section1;
+}
+.main .section2{
+    grid-area: section2;
+}
+.main .section3{
+    grid-area: section3;
+}
+
+
+/*estilos para los articulos y grid del main*/
+
+.article{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "titulo-section titulo-section"
+    "text-section img-section"
+    ;
+}
+.titulo-section{
+    grid-area: titulo-section;
+    text-align: left;
+}
+
+.text-section{
+grid-area: text-section;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.text-section p{
+    text-align: left;
+  
+}
+
+.img-section{
+grid-area: img-section;
+}
+
+
+/*estilos para los articulos y grid del aside*/
+
+.aside{
+    padding: 7px;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 20% 20% 20%;
+grid-template-areas: 
+"article1"
+"article2"
+"article3"
+;
+
+
+}
+
+.aside .article1{
+    
+    grid-area:article1;
+ 
+}
+.aside .article2{
+    
+    grid-area:article2;
+   
+}
+.aside .article3{
+    
+    grid-area:article3;
+
+}
+
+
+.aside article .inside-article{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "img-section titulo-section"
+    "img-section text-section"
+    ;
+   
+}
+
+.aside article .titulo-section{
+    grid-area: titulo-section;
+    text-align: center;
+}
+
+.aside article .text-section{
+grid-area: text-section;
+
+}
+
+.aside article .text-section p{
+    text-align: justify;
+  
+}
+
+.aside article .img-section{
+grid-area: img-section;
+height: 100%;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 30% 40% 30% ;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "f-1 f-2 f-3"
+    ;
+    padding: 10px;
+    background-color: black;
+}
+
+.footer .f-1{
+    grid-area: f-1;
+}
+
+.f-1 ul{
+   display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.f-1 ul li{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.f-1 ul li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.footer .f-2{
+    grid-area: f-2;
+}
+
+.footer .f-3{
+    grid-area: f-3;
+}
