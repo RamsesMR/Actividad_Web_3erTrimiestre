@@ -88,7 +88,7 @@ img{
 
 /*Estilos para el header y grid*/
 .header{
-    background-image: url("../src/img/im.webp");
+    background-image: url("../src/img/fraofrao.jpg");
     background-repeat: no-repeat;
     background-position: center; /* Centra la imagen */
     background-size: cover;
@@ -97,7 +97,6 @@ img{
     grid-template-rows: 100%;
     grid-template-areas: 
     "sec1-header sec2-header";
-    
 }
 
 .sec1-header{
