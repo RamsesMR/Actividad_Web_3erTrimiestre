@@ -29,6 +29,6 @@ setTimeout(() => {
 
     escribe(title_h1,text_h1,50);
     escribe(title_h2,text_h2,50);
-    escribe(title_p,text_p,30);
+    escribe(title_p,text_p,20);
     
 }, 0);
