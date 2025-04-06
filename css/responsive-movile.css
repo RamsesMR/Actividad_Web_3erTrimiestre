@@ -163,5 +163,9 @@ body{
         gap: 10px;
         word-wrap: break-word;
         }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
   
   }
