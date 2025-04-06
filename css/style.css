@@ -1,17 +1,21 @@
 *{
     /* padding: 0; */
-    margin: 0;
+    /* margin: 0; */
     box-sizing: border-box;
     font-family:monospace;
 }
 html{
     width: 100%;
     height: 100%;
+    padding: 0;
+    margin: 0;
 
 }
 
 /* GRID DEL BODY Y CSS DEL BODY*/
 body{
+    padding: 0;
+    margin: 0;
     font-size: 1.15rem !important;
     height: 100%;
     width: 100%;
@@ -20,7 +24,7 @@ body{
     color: whitesmoke;
     display: grid;
     grid-template-columns: 70% 30% ;
-    grid-template-rows: 700px 100px 1fr 200px;
+    grid-template-rows: 700px 120px 1fr 200px;
     grid-template-areas: 
     "header header"
     "nav nav"
@@ -41,18 +45,23 @@ img{
 .header h1{
     font-size: 80px;
     background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin: 0;
   
 }
 
 .header h2{
     font-size: 60px;
     background-color: rgba(0, 0, 0, 0.8);
-  
+    padding: 0;
+    margin: 0;
 }
 
 .header p{
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin: 0;
 }
 .header img{
     object-fit: contain;
@@ -61,6 +70,8 @@ img{
     background-color: rgba(0, 0, 0, 0.8);
 }
 .nav{
+    margin: 0;
+    padding: 0;
    
     grid-area: nav;
    
@@ -68,20 +79,27 @@ img{
 .main{
    
     grid-area: main;
+    margin: 0;
+    padding: 0;
 }
 .aside{
   
     grid-area: aside;
+    margin: 0;
+    padding: 0;
     
 }
 .footer{
     
     grid-area: footer;
+   
+ 
 }
 
 
 .nav ul{
     padding: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
     list-style: none;
@@ -159,7 +177,7 @@ img{
     "section3";
 }
 .main section{
- padding-top: 90px;
+ padding-top:0;
 }
 .main .section1{
     grid-area: section1;
@@ -180,7 +198,7 @@ img{
 }
 /*estilos para los articulos y grid del main*/
 
-.article{
+.home .article{
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: auto auto auto;
@@ -192,7 +210,7 @@ img{
 .main .titulo-section{
     grid-area: titulo-section;
     text-align: center;
-    padding-bottom: 40px;
+    
     font-size: 50px;
 }
 
@@ -210,7 +228,9 @@ align-items: center;
 
 .img-section{
     padding-bottom: 40px;
-grid-area: img-section;
+    grid-area: img-section;
+ 
+
 }
 
 /*estilos para cada articulo de cada seccion del main*/
@@ -347,9 +367,6 @@ height: 100%;
 }
 
 
-
-
-
 /*aqui vamos a personalizar los articulos de cada seccion del main  en las otras paginas que no sean el index*/
 
 .contacto .main .article{
@@ -377,17 +394,18 @@ height: 100%;
    
         form{
             width: 100%;
+            max-width: max-content;
             height: auto;
         }
         
     }
     
 fieldset{
-   
+
     text-align: left;
 }
 
-fieldset
+
     
     .div-input{
         display: flex;
@@ -402,6 +420,13 @@ fieldset
         text-align: left;
         width: auto;
     }
+
+    .div-input3{
+        display: flex;
+         width: 100%;
+    }
+
+   
 
     ul{
 padding: auto !important;
@@ -478,3 +503,202 @@ padding: auto !important;
     height: 100%;
     }
 }
+
+
+/* personalizando la pagina de quienes somos*/
+.quienes .main {
+
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto ;
+    grid-template-areas: 
+    "section1"
+   !important;
+
+}
+
+    
+   
+.aside{
+    background-color: #1D1D1D;
+    padding: 7px;
+    display: grid;
+    grid-template-columns: auto !important;
+    grid-template-rows: auto auto auto !important;
+    grid-template-areas: 
+    "article1"
+    "article2"
+    "article3"
+     !important;
+    
+    
+    }
+    
+    .aside .article1{
+        
+        grid-area:article1;
+       
+     
+    }
+    .aside .article2{
+        
+        grid-area:article2;
+       
+    }
+    .aside .article3{
+        
+        grid-area:article3;
+    
+    }
+    
+    
+    .aside article .inside-article{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "img-section titulo-section"
+        "img-section text-section"
+        ;
+       
+    }
+    
+    .aside article .titulo-section{
+        grid-area: titulo-section;
+        text-align: center;
+    }
+    
+    .aside article .text-section{
+    grid-area: text-section;
+    
+    }
+    
+    .aside article .text-section p{
+        text-align: justify;
+      
+    }
+    
+    .aside article .img-section{
+    grid-area: img-section;
+    height: 100%;
+    }
+
+/*personalizando la pagina de area*/
+.area .main{
+
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto;
+    grid-template-areas: 
+    "section1"
+    
+     !important;
+
+
+         
+   
+.area .aside{
+    background-color: #1D1D1D;
+    padding: 7px;
+    display: grid;
+    grid-template-columns: auto !important;
+    grid-template-rows: 200px 20% 20% !important;
+    grid-template-areas: 
+    "article1"
+    "article2"
+    "article3"
+     !important;
+    
+    
+    }
+    
+    .area .article{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "titulo-section titulo-section titulo-section"
+        "img-section img-section img-section"
+        "text-section text-section text-section" !important;
+    }
+    .main .titulo-section{
+        grid-area: titulo-section;
+        text-align: center;
+        padding-bottom: 40px;
+        font-size: 50px;
+    }
+    
+    .text-section{
+    grid-area: text-section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .text-section p{
+        text-align: left;
+     
+    }
+    
+    .img-section{
+    padding-bottom: 40px;
+    grid-area: img-section;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    word-wrap: break-word;
+    
+    }
+    .img-section div{
+        transition: 1s all ease;
+    }
+
+
+    
+    .img-section h2{
+       
+        cursor: pointer;
+       z-index: 100;
+    }
+
+     .img-section img{
+        padding-top: 10px;
+        width: 300px;
+        height: 400px;
+        cursor: pointer;
+        
+    }
+
+   .img-section div:hover{
+        transform: scale(1.1);
+        
+       
+    }
+   
+    
+
+
+}
+
+.resaltado{
+    color: yellow !important;
+    align-items: start !important;
+    justify-content: start;
+} li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    z-index: 1000;
+  }
+
+  /* Mostrar submenú al hacer hover en el padre */
+  li:hover > ul {
+    display: block;
+  }
+
+  /* Estilo opcional para los subelementos */
+ 

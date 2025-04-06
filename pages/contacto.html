@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/creative-computer-logo-template/6370560.jpg" type="image/x-icon"> 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive-movile.css">
     <link rel="stylesheet" href="../css/responvise-table.css">
@@ -31,6 +32,9 @@
 
     <nav class="nav">
         <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
             <li>
                 <a href="quienes_somos.html">Quienes somos</a>
             </li>
@@ -65,28 +69,28 @@
                             <legend>Datos personales(*)</legend>
 
                             <div class="div-input">
-                                <label for="apellido">Apellido</label>
-                                <input type="text" name="apellido" id="apellido">
+                                <label for="apellido">Apellido*</label>
+                                <input type="text" name="apellido" id="apellido" required>
                             </div>
 
                             <div class="div-input">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="Nombre" id="Nombre">
+                                <label for="nombre">Nombre*</label>
+                                <input type="text" name="Nombre" id="Nombre" required>
                             </div>
 
                             <div class="div-input">
-                                <label for="dni">DNI</label>
-                                <input type="text" name="dni" id="dni">
+                                <label for="dni">DNI*</label>
+                                <input type="text" name="dni" id="dni" required>
                             </div>
 
                             <div class="div-input">
-                                <label for="nacido">Nacido/a en</label>
-                                <input type="text" name="nacido" id="nacido">
+                                <label for="nacido">Nacido/a en*</label>
+                                <input type="text" name="nacido" id="nacido" required>
                             </div>
 
                             <div class="div-input">
-                                <label for="provincia">Provincia</label>
-                                <select name="provincia" id="provincia">
+                                <label for="provincia">Provincia*</label>
+                                <select name="provincia" id="provincia" required>
                                     <option value="valencia">Valencia</option>
                                     <option value="Madrid">Madrid</option>
                                     <option value="Asturias">Asturias</option>
@@ -96,28 +100,28 @@
 
 
                             <div class="div-input">
-                                <label for="fnac">Fecha Nacimiento (dd/mm/aaaa)</label>
-                                <input type="date" name="fnac" id="fnac">
+                                <label for="fnac">Fecha Nacimiento (dd/mm/aaaa)*</label>
+                                <input type="date" name="fnac" id="fnac" required>
                             </div>
 
                             <div class="div-input">
-                                <label for="direccion">Domicilio (Calle, pllaza y numero)</label>
-                                <input type="text" name="direccion" id="direccion">
+                                <label for="direccion">Domicilio (Calle, pllaza y numero)*</label>
+                                <input type="text" name="direccion" id="direccion" required>
                             </div>
 
                             <div class="div-input">
-                                <label for="cp">CP</label>
-                                <input type="text" name="cp" id="cp">
+                                <label for="cp">CP*</label>
+                                <input type="text" name="cp" id="cp" required>
                             </div>
 
                             <div class="div-input">
-                                <label for="localidad">Localidad</label>
-                                <input type="text" name="localidad" id="localidad">
+                                <label for="localidad">Localidad*</label>
+                                <input type="text" name="localidad" id="localidad" required>
                             </div>
 
                             <div class="div-input">
                                 <label for="provincia2">Provincia</label>
-                                <select name="provincia2" id="provincia2">
+                                <select name="provincia2" id="provincia2" required>
                                     <option value="valencia">Valencia</option>
                                     <option value="Madrid">Madrid</option>
                                     <option value="Asturias">Asturias</option>
@@ -126,8 +130,8 @@
                             </div>
 
                             <div class="div-input">
-                                <label for="tel">Telefono</label>
-                                <input type="text" name="tel" id="tel">
+                                <label for="tel">Telefono*</label>
+                                <input type="text" name="tel" id="tel" required>
                             </div>
 
                         </fieldset>
@@ -201,7 +205,7 @@
                                 </select>
                             </div>
 
-                            <div style="display: flex; width: 100%;">
+                            <div class="div-input3" >
 
                                 <div class="div-input">
                                     <label for="ciclosformativos">ciclos formativos</label>
@@ -270,7 +274,7 @@
                                 </ul>
                             </div>
 
-                            <div class="div-input2">
+                            <div class="div-input3">
 
                                 <input type="text"> , <input type="text"> de <input type="text" name="" id=""> de
                                 <select name="algo" id="aglo">
@@ -441,7 +445,10 @@
         <div class="f-1">
             <ul>
                 <li>
-                    <a href="/quienes_somos.html">Quienes somos</a>
+                    <a class="resaltado" href="#">IR ARRIBA</a>
+                </li>
+                <li>
+                    <a href="quienes_somos.html">Quienes somos</a>
                 </li>
                 <li>
                     <a href="area_actuacion.html">Área de actuación</a>
