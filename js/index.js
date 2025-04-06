@@ -32,3 +32,22 @@ setTimeout(() => {
     escribe(title_p,text_p,20);
     
 }, 0);
+
+
+//manejemos los enlaces del footer
+
+let instagram= document.getElementById("intagram");
+let whasapp= document.getElementById("whasapp");
+let facebook = document.getElementById("facebook");
+
+instagram.addEventListener("click",()=>{
+    window.open("https://www.instagram.com/","_blank")
+});
+
+whasapp.addEventListener("click",()=>{
+    window.open("https://www.whatsapp.com/download?lang=es","_blank")
+})
+
+facebook.addEventListener("click",()=>{
+    window.open("www.facebook.com","_blank");
+})
