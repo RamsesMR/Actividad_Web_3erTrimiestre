@@ -13,7 +13,7 @@ body{
     background-color: #333333;
     color: whitesmoke;
     display: grid;
-    grid-template-columns: 100% ;
+    grid-template-columns: 100%;
     grid-template-rows: 700px 100px 1fr auto auto ;
     grid-template-areas: 
     "header"

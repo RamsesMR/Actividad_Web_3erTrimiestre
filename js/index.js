@@ -67,3 +67,10 @@ img2.addEventListener("click",()=>{
 img3.addEventListener("click",()=>{
     window.location.href="../index.html";
 })
+
+inputAPAGAR= document.querySelectorAll("#bachirreetaro");
+inputAPAGAR.array.forEach(element => {
+    if(this){
+        
+    }
+});
