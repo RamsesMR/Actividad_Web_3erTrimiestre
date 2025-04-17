@@ -130,6 +130,21 @@ img{
     transition: 0.4s all ease-in;
 }
 
+.nav ul li:hover > ul{
+    display: block;
+}
+
+.nav ul li ul{
+    display: none;
+    position: relative;
+   
+    background-color: black;
+}
+.nav ul li ul li{
+    
+   
+    background-color: black;
+}
 
 /*Estilos para el header y grid*/
 .header{
@@ -274,12 +289,13 @@ grid-template-areas:
 
 .aside article .inside-article{
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
-    "img-section titulo-section"
-    "img-section text-section"
-    ;
+    "titulo-section"
+    "img-section"
+    "text-section"
+    !important;
    
 }
 
@@ -337,7 +353,7 @@ height: 100%;
     text-decoration: none;
     font-size: 20px;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     color: whitesmoke;
 }
@@ -355,7 +371,7 @@ height: 100%;
     grid-area: f-3;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
    
 
     img{
@@ -553,13 +569,14 @@ padding: auto !important;
     }
     
     
-    .aside article .inside-article{
+    .quienes .aside article .inside-article{
         display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
         grid-template-areas: 
-        "img-section titulo-section"
-        "img-section text-section"
+        "titulo-section"
+        "img-section"
+        "text-section"
         ;
        
     }
@@ -692,7 +709,7 @@ padding: auto !important;
 } li ul {
     display: none;
     position: absolute;
-    top: 100%;
+    /* top: 100%; */
     left: 0;
     min-width: 180px;
     z-index: 1000;
